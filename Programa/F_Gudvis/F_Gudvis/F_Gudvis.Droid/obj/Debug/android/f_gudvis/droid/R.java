@@ -2483,8 +2483,6 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f03002f;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f05001f;
-        public static final int Hello=0x7f05001e;
         public static final int abc_action_bar_home_description=0x7f05000b;
         public static final int abc_action_bar_home_description_format=0x7f05000c;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f05000d;
