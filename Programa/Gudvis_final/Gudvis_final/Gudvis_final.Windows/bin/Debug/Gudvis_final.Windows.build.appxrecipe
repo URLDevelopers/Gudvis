@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-3JVMIKK</Machine>
+    <WindowsUser>jcdur</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>85930d70-750c-41a6-9b95-03faaed4159c</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\bin\Debug\Gudvis_final.Windows.exe">
+      <PackagePath>Gudvis_final.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final\bin\Debug\Gudvis_final.dll">
+      <PackagePath>Gudvis_final.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\Events.png">
+      <PackagePath>Assets\Events.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\Friends.png">
+      <PackagePath>Assets\Friends.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\menu.png">
+      <PackagePath>Assets\menu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\Profile.png">
+      <PackagePath>Assets\Profile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\Settings.png">
+      <PackagePath>Assets\Settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\Timeline.png">
+      <PackagePath>Assets\Timeline.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\gudvis.jpg">
+      <PackagePath>Assets\gudvis.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Assets\gudvis2.jpg">
+      <PackagePath>Assets\gudvis2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\bin\Debug\Gudvis_final.Windows.xr.xml">
+      <PackagePath>Gudvis_final.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final.Windows\Gudvis_final.Windows.csproj;neutral
+C:\Users\jcdur\Desktop\Xamarin\VS\Cross-Plataform\Gudvis_final\Gudvis_final\Gudvis_final\Gudvis_final.csproj;neutral
