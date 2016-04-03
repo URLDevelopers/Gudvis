@@ -1,8 +1,0 @@
-﻿<Application
-    x:Class="Gudvis_F.UWP.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Gudvis_F.UWP"
-    RequestedTheme="Light">
-
-</Application>
