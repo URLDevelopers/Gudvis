@@ -13,6 +13,7 @@ public class FormsFragmentPagerAdapter_1
 			"n_getItem:(I)Landroid/support/v4/app/Fragment;:GetGetItem_IHandler\n" +
 			"n_getItemId:(I)J:GetGetItemId_IHandler\n" +
 			"n_getItemPosition:(Ljava/lang/Object;)I:GetGetItemPosition_Ljava_lang_Object_Handler\n" +
+			"n_restoreState:(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V:GetRestoreState_Landroid_os_Parcelable_Ljava_lang_ClassLoader_Handler\n" +
 			"n_getPageTitle:(I)Ljava/lang/CharSequence;:GetGetPageTitle_IHandler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", FormsFragmentPagerAdapter_1.class, __md_methods);
@@ -57,6 +58,14 @@ public class FormsFragmentPagerAdapter_1
 	}
 
 	private native int n_getItemPosition (java.lang.Object p0);
+
+
+	public void restoreState (android.os.Parcelable p0, java.lang.ClassLoader p1)
+	{
+		n_restoreState (p0, p1);
+	}
+
+	private native void n_restoreState (android.os.Parcelable p0, java.lang.ClassLoader p1);
 
 
 	public java.lang.CharSequence getPageTitle (int p0)

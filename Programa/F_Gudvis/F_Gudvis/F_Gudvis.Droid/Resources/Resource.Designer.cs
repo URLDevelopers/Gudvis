@@ -26,6 +26,7 @@ namespace F_Gudvis.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::F_Gudvis.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

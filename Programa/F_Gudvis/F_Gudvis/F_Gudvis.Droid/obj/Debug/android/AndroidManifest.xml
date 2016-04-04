@@ -6,7 +6,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:name="mono.android.app.Application" android:allowBackup="true" android:label="F_Gudvis.Droid" android:icon="@android:color/transparent" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@android:color/transparent" android:label="F_Gudvis" android:name="md50d65036d3208e3d38fcf23bb28520f20.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@android:color/transparent" android:label="Gudvis" android:name="md50d65036d3208e3d38fcf23bb28520f20.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
