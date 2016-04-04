@@ -205,9 +205,15 @@ namespace F_Gudvis.Profile
             //};
             Label id = new Label
             {
-                Text = "This is your settings page",
+                Text = "Profile page upgrading. We'll back in a moment",
                 TextColor = Color.Black,
                 XAlign = TextAlignment.Center
+            };
+
+            ActivityIndicator loading = new ActivityIndicator()
+            {
+                Color = Color.FromHex("#FF5722"),
+                IsRunning = true,
             };
 
             BackgroundColor = Color.White;
@@ -215,7 +221,7 @@ namespace F_Gudvis.Profile
             {
                 VerticalOptions = LayoutOptions.Center,
                 Children = {
-                        id
+                       loading, id
                         }
             };
         }

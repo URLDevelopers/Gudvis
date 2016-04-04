@@ -38,6 +38,8 @@ C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\res\drawable\gudvis.jpg
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\res\drawable\gudvis2.jpg
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\res\drawable\menu.png
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\bin\Debug\Xamarin.Auth.Android.dll
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\bin\Debug\Xamarin.Auth.Android.xml
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\bin\Debug\F_Gudvis.dll.mdb
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\F_Gudvis.Droid.dll.mdb
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\bin\Debug\F_Gudvis.Droid.dll.mdb

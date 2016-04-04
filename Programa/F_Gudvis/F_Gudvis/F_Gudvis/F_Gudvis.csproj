@@ -36,12 +36,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Event.cs" />
     <Compile Include="Events\EventCreation.cs" />
     <Compile Include="Events\EventsMain.cs" />
     <Compile Include="Events\ViewEvent.cs" />
+    <Compile Include="Follow.cs" />
     <Compile Include="Following_Follower\ViewFollowers.cs" />
     <Compile Include="Following_Follower\ViewFollowing.cs" />
     <Compile Include="Home.cs" />
+    <Compile Include="Level.cs" />
     <Compile Include="Log In\Auth.cs" />
     <Compile Include="Navigation Drawer\MenuCell.cs" />
     <Compile Include="Navigation Drawer\MenuItem.cs" />
@@ -49,12 +52,13 @@
     <Compile Include="Navigation Drawer\MenuListView.cs" />
     <Compile Include="Navigation Drawer\MenuPage.cs" />
     <Compile Include="Navigation Drawer\RootPage.cs" />
-    <Compile Include="New User\Username.cs" />
+    <Compile Include="Log In\Username.cs" />
     <Compile Include="Partner\Partner.cs" />
     <Compile Include="Profile\Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\Settings.cs" />
     <Compile Include="Timeline\Timeline.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

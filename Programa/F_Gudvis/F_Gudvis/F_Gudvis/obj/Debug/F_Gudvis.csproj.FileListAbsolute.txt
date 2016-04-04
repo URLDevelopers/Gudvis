@@ -12,3 +12,5 @@ C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\D
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\F_Gudvis.dll.mdb
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.dll.mdb
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\F_Gudvis.dll.mdb
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.dll.mdb
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\F_Gudvis.dll.mdb

@@ -17,46 +17,18 @@ namespace F_Gudvis
         Button login, Partner;
         Image logo;
 
-
-
-        //async void OnButtonClicked_Login(object sender, EventArgs e)
-        //{
-        //    var page = new Auth();
-        //    await Navigation.PushAsync(page);
-        //    Navigation.RemovePage(page);
-        //}
-
-        //async void OnButtonClicked_Partner(object sender, EventArgs e)
-        //{
-        //    var page = new Gudvis_.Partner.Partner();
-        //    await Navigation.PushAsync(page);
-        //}
-
-       private void Partner_Clicked(object sender, EventArgs e)
+       async void Partner_Clicked(object sender, EventArgs e)
         {
             var page = new Partner.Partner();
             App.Current.MainPage = page;
         }
 
-        private void Login_Clicked(object sender, EventArgs e)
+        async void Login_Clicked(object sender, EventArgs e)
         {
             var page = new Navigation_Drawer.RootPage();
             App.Current.MainPage = page;
-            ////var page = new Log_In.Auth();
-            //await Navigation.PushAsync(page);
-            //Navigation.RemovePage(page);
-            //bool userExists = false;
-            //if (userExists)
-            //{
-            //    var page = new Gudvis_final.Profile.Profile();
-            //    Navigation.InsertPageBefore(page, this);
-            //    await Navigation.PopAsync().ConfigureAwait(false);
-            //} else
-            //{
-            //    var page = new Gudvis_final.New_User.Username();
-            //    Navigation.InsertPageBefore(page, this);
-            //    await Navigation.PopAsync().ConfigureAwait(false);
-            //}
+            //var page = new Log_In.Auth();
+            //App.Current.MainPage = page;
         }
 
         public Home()
@@ -103,10 +75,7 @@ namespace F_Gudvis
             grid.Children.Add(login, 0, 1);
 
 
-
             BackgroundColor = Color.FromHex("#f5f5f5");
-            //login.Clicked += OnButtonClicked_Login;
-            //Partner.Clicked += OnButtonClicked_Partner;
             Content = new StackLayout
             {
                 Spacing = 10,

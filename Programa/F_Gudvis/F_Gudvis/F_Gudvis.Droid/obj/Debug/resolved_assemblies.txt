@@ -5,6 +5,7 @@ C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\mscorlib.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Core.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.dll
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Json.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Xml.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Xml.Linq.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Android.Support.Design.dll
@@ -12,6 +13,7 @@ C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.CardView.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Auth.Android.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Forms.Core.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Forms.Platform.Android.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Xamarin.Forms.Platform.dll

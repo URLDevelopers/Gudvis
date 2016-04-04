@@ -6,13 +6,20 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace F_Gudvis.New_User
+namespace F_Gudvis.Log_In
 {
-    class Username : ContentPage
+    public class Username : ContentPage
     {
-        Label lblInfo, lblError;
-        Entry txtUsername;
-        Button btnCreate;
+        private Label lblInfo, lblError;
+        private Entry txtUsername;
+        private Button btnCreate;
+        private User actUser;
+        //private UserConnection uc = new UserConnection();
+
+        public void getUser(User theUser)
+        {
+            actUser = theUser;
+        }
         public Username()
         {
             lblInfo = new Label
@@ -33,7 +40,8 @@ namespace F_Gudvis.New_User
             {
                 TextColor = Color.Black,
                 Placeholder = "Enter a username",
-                BackgroundColor = Color.FromHex("#B6B6B6"),
+                PlaceholderColor = Color.FromHex("#B6B6B6"),
+                //BackgroundColor = Color.FromHex("#B6B6B6"),
                 FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Entry)),
                 FontFamily = Device.OnPlatform(
                     iOS: "MarkerFelt-thin",
@@ -65,6 +73,7 @@ namespace F_Gudvis.New_User
             Content = new StackLayout
             {
                 VerticalOptions = LayoutOptions.Center,
+                HorizontalOptions = LayoutOptions.Center,
                 Children =
                 {
                     lblInfo, txtUsername, btnCreate,
