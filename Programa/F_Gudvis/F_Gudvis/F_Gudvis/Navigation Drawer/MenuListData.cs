@@ -24,19 +24,19 @@ namespace F_Gudvis.Navigation_Drawer
                 TargetType = typeof(Timeline.Timeline)
             });
 
-            this.Add(new MenuItem()
-            {
-                Title = "Followers",
-                IconSource = "Followers.png",
-                TargetType = typeof(Following_Follower.ViewFollowers)
-            });
+            //this.Add(new MenuItem()
+            //{
+            //    Title = "Followers",
+            //    IconSource = "Followers.png",
+            //    TargetType = typeof(Following_Follower.ViewFollowers)
+            //});
 
-            this.Add(new MenuItem()
-            {
-                Title = "Following",
-                IconSource = "Following.png",
-                TargetType = typeof(Following_Follower.ViewFollowing)
-            });
+            //this.Add(new MenuItem()
+            //{
+            //    Title = "Following",
+            //    IconSource = "Following.png",
+            //    TargetType = typeof(Following_Follower.ViewFollowing)
+            //});
 
             this.Add(new MenuItem()
             {

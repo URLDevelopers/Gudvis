@@ -8,9 +8,7 @@ C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\D
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.csprojResolveAssemblyReference.cache
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.pdb
-C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.dll.mdb
-C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\F_Gudvis.dll.mdb
-C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.dll.mdb
-C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\F_Gudvis.dll.mdb
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\Newtonsoft.Json.xml
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\obj\Debug\F_Gudvis.dll.mdb
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis\bin\Debug\F_Gudvis.dll.mdb

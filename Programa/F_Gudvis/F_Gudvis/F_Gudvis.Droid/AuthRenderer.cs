@@ -62,9 +62,9 @@ namespace F_Gudvis.Droid
                     user.lastname = userData["last_name"].ToString().Replace("\"", "");
                     //user.location = userData["location"];
 
-                    //F_Gudvis.UserConnection uc = new UserConnection();
-                    //User searchedUser = uc.getUserByFBId(user.fbID);
-                    if (true)
+                    F_Gudvis.UserConnection uc = new UserConnection();
+                    User searchedUser = uc.getUserByFBId(user.fbID);
+                    if (searchedUser == null)
                     {
                         //It means that user name needs to be created
                         var page = new Username();

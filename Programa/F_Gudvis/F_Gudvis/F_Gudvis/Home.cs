@@ -25,7 +25,9 @@ namespace F_Gudvis
 
         async void Login_Clicked(object sender, EventArgs e)
         {
+            User newUser = new User();
             var page = new Navigation_Drawer.RootPage();
+            page.getUser(newUser);
             App.Current.MainPage = page;
             //var page = new Log_In.Auth();
             //App.Current.MainPage = page;
@@ -53,7 +55,8 @@ namespace F_Gudvis
                 Text = "Sign up as a Partner",
                 BackgroundColor = Color.FromHex("#E64A19"),
                 TextColor = Color.FromHex("#FFFFFF"),
-                HorizontalOptions = LayoutOptions.Center
+                HorizontalOptions = LayoutOptions.Center,
+                IsVisible = false
 
             };
 
@@ -63,8 +66,7 @@ namespace F_Gudvis
             {
                 Source = ImageSource.FromFile("gudvis.jpg"),
                 HeightRequest = 300,
-                WidthRequest = 300
-
+                WidthRequest = 300,
             };
 
             var grid = new Grid();

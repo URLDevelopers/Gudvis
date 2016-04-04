@@ -9,6 +9,12 @@ namespace F_Gudvis.Settings
 {
     class Settings : ContentPage
     {
+        private User actUser;
+
+        public void getUser(User newUser)
+        {
+            actUser = newUser;
+        }
         public Settings()
         {
 

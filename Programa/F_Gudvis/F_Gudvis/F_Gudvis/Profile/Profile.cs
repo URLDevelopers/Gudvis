@@ -15,227 +15,223 @@ namespace F_Gudvis.Profile
                     Android: "sans-serif-light",
                     WinPhone: "Comic Sans Ms"
                 );
-        //private User actUser;
-        //private FollowConnection fc = new FollowConnection();
-        //private List<User> followers, following;
+        private User actUser = new User();
+        private FollowConnection fc = new FollowConnection();
+        private List<User> followers, following;
 
-        ///// <summary>
-        /////     This method needs to be called 
-        ///// </summary>
-        ///// <param name="theUser"></param>
-        //public void getUserInfo(User theUser)
-        //{
-        //    actUser = theUser;
-        //}
+        #region class Methods
+        /// <summary>
+        ///     This method needs to be called 
+        /// </summary>
+        /// <param name="theUser"></param>
+        public void getUser(User theUser)
+        {
+            actUser = theUser;
+        }
 
-        ///// <summary>
-        /////     This function returns the # of followers from actual user
-        ///// </summary>
-        ///// <returns>
-        /////     # of followers
-        ///// </returns>
-        //private int getFollowers()
-        //{
-        //    followers = fc.getAllFollowers(actUser.username); //Gets all followers from actual user 
-        //    return followers.Count;
-        //}
+        /// <summary>
+        ///     This function returns the # of followers from actual user
+        /// </summary>
+        /// <returns>
+        ///     # of followers
+        /// </returns>
+        private int getFollowers()
+        {
+            return 1000;
+            if (actUser.fbID != null)
+            {
+                followers = fc.getAllFollowers(actUser.username); //Gets all followers from actual user 
+                return followers.Count;
+            }
+            else
+                return 0;
+        }
 
-        ///// <summary>
-        /////     This function returns the # of followers from actual user
-        ///// </summary>
-        ///// <returns>
-        /////     # of followers
-        ///// </returns>
-        //private int getFollowing()
-        //{
-        //    following = fc.getAllFollowing(actUser.username); //Gets all following from actual user 
-        //    return following.Count;
-        //}
+        /// <summary>
+        ///     This function returns the # of followers from actual user
+        /// </summary>
+        /// <returns>
+        ///     # of followers
+        /// </returns>
+        private int getFollowing()
+        {
+            return 200;
+            if (actUser.fbID != null)
+            {
+                following = fc.getAllFollowing(actUser.username); //Gets all following from actual user 
+                return following.Count;
+            }
+            else
+                return 0;
+        }
+        #endregion+
 
         public Profile()
         {
             //This methods are created for asigning a "onClick" event to each label.
             //with the goal of: everytime a user clicks on his/her followers/following,
             //it will open a new window, showing them.
-            //#region TapGesture for labels 
-            //TapGestureRecognizer toFollowing = new TapGestureRecognizer
-            //{
-            //    Command = new Command(() => lblFollowingClicked()),
-            //};
-
-            //TapGestureRecognizer toFollowing2 = new TapGestureRecognizer
-            //{
-            //    Command = new Command(() => lblFollowingClicked()),
-            //};
-
-            //TapGestureRecognizer toFollower = new TapGestureRecognizer
-            //{
-            //    Command = new Command(() => lblFollowersClicked()),
-            //};
-
-            //TapGestureRecognizer toFollower2 = new TapGestureRecognizer
-            //{
-            //    Command = new Command(() => lblFollowersClicked()),
-            //};
-            //#endregion
-
-            //#region components definition
-            //lblFollowing = new Label {
-            //    Text = "Following:",
-            //    FontSize = 15,
-            //    TextColor = Color.Silver,
-            //    HorizontalTextAlignment = TextAlignment.Center,
-            //    VerticalTextAlignment = TextAlignment.Center,
-            //    FontFamily = fontType
-            //};
-            //lblFollowing.GestureRecognizers.Add(toFollowing);
-
-            //lblNFollowing = new Label
-            //{
-            //    Text = getFollowing().ToString(),
-            //    FontSize = 15,
-            //    TextColor = Color.Silver,
-            //    HorizontalTextAlignment = TextAlignment.Center,
-            //    VerticalTextAlignment = TextAlignment.Center,
-            //    FontFamily = fontType
-            //};
-            //lblNFollowing.GestureRecognizers.Add(toFollowing2);
-
-            //lblFollowers = new Label
-            //{
-            //    Text = "Followers",
-            //    FontSize = 15,
-            //    TextColor = Color.Silver,
-            //    HorizontalTextAlignment = TextAlignment.Center,
-            //    VerticalTextAlignment = TextAlignment.Center,
-            //    FontFamily = fontType
-            //};
-            //lblFollowers.GestureRecognizers.Add(toFollower);
-
-            //lblNFollowers = new Label
-            //{
-            //    Text = getFollowers().ToString(),
-            //    FontSize = 15,
-            //    TextColor = Color.Silver,
-            //    HorizontalTextAlignment = TextAlignment.Center,
-            //    VerticalTextAlignment = TextAlignment.Center,
-            //    FontFamily = fontType
-            //};
-            //lblNFollowers.GestureRecognizers.Add(toFollower2);
-            //#endregion
-
-
-            //// DEMO DATA
-            //actUser.picture_link = "http://graph.facebook.com/593257725/picture?type=normal&height=130&width=130";
-            //actUser.firstname = "Pablo"; actUser.lastname = "Quemé";
-            //actUser.username = "avatarbobo";
-            //actUser.levelNumber = 5;
-            //actUser.location = "Guatemala";
-            //actUser.score = 12000;
-            //actUser.Level = new Level();
-
-            //var gridFollows = new Grid();
-            //gridFollows.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-            //gridFollows.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-            //gridFollows.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            //gridFollows.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-
-            //gridFollows.Children.Add(lblFollowers, 0, 0);
-            //gridFollows.Children.Add(lblFollowing, 1, 0);
-            //gridFollows.Children.Add(lblNFollowers, 0, 1);
-            //gridFollows.Children.Add(lblNFollowing, 1, 1);
-
-            //var gridPoints = new Grid();
-            //gridPoints.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-            //gridPoints.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-            //gridPoints.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            //gridPoints.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(3, GridUnitType.Star) });
-            //gridPoints.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-
-            //gridPoints.Children.Add(new Label { BackgroundColor = Color.FromHex("#FF9800"), Text = actUser.score.ToString() + "/15000", FontSize = 15, TextColor = Color.FromHex("#212121"), HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center }, 1, 0);
-            //gridPoints.Children.Add(new Label { Text = actUser.levelNumber.ToString(), FontSize = 20, TextColor = Color.Black, FontAttributes = FontAttributes.Bold, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center }, 0, 0);
-            //gridPoints.Children.Add(new Label { Text = (actUser.levelNumber + 1).ToString(), FontSize = 20, TextColor = Color.Black, FontAttributes = FontAttributes.Bold, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center }, 2, 0);
-
-            //var profileStack = new StackLayout
-            //{
-            //    VerticalOptions = LayoutOptions.FillAndExpand,
-            //    HorizontalOptions = LayoutOptions.FillAndExpand,
-            //    BackgroundColor = Color.FromHex("#00796B"),
-            //    Children = {
-            //        new Image
-            //        {
-            //            Source = actUser.picture_link
-            //        },
-            //        new Label
-            //        {
-            //            HorizontalTextAlignment = TextAlignment.Center,
-            //            Text = actUser.firstname + " " + actUser.lastname,
-            //            FontAttributes = FontAttributes.Bold,
-
-            //            TextColor = Color.FromHex("#FFFFFF"),
-            //            FontSize = 25
-            //        },
-            //        new Label
-            //        {
-            //            HorizontalTextAlignment = TextAlignment.Center,
-            //            Text = "@" + actUser.username,
-            //            TextColor = Color.FromHex("#FFFFFF"),
-            //            FontSize = 18
-            //        },
-            //        gridFollows,
-            //        gridPoints
-            //    }
-            //};
-
-            //var profileScrollView = new ScrollView
-            //{
-            //    Content = profileStack
-            //};
-
-
-            //Content = new StackLayout
-            //{
-            //    BackgroundColor = Color.FromHex("#FFFFFF"),
-
-            //    VerticalOptions = LayoutOptions.FillAndExpand,
-            //    HorizontalOptions = LayoutOptions.FillAndExpand,
-            //    Children = {
-            //            profileScrollView
-            //        }
-            //};
-            Label id = new Label
+            #region TapGesture for labels 
+            TapGestureRecognizer toFollowing = new TapGestureRecognizer
             {
-                Text = "Profile page upgrading. We'll back in a moment",
-                TextColor = Color.Black,
-                XAlign = TextAlignment.Center
+                Command = new Command(() => lblFollowingClicked()),
             };
 
-            ActivityIndicator loading = new ActivityIndicator()
+            TapGestureRecognizer toFollowing2 = new TapGestureRecognizer
             {
-                Color = Color.FromHex("#FF5722"),
-                IsRunning = true,
+                Command = new Command(() => lblFollowingClicked()),
             };
 
-            BackgroundColor = Color.White;
+            TapGestureRecognizer toFollower = new TapGestureRecognizer
+            {
+                Command = new Command(() => lblFollowersClicked()),
+            };
+
+            TapGestureRecognizer toFollower2 = new TapGestureRecognizer
+            {
+                Command = new Command(() => lblFollowersClicked()),
+            };
+            #endregion
+
+            #region components definition
+            lblFollowing = new Label
+            {
+                Text = "Following:",
+                FontSize = 15,
+                TextColor = Color.Silver,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                FontFamily = fontType
+            };
+            lblFollowing.GestureRecognizers.Add(toFollowing);
+
+            lblNFollowing = new Label
+            {
+                FontSize = 15,
+                TextColor = Color.Silver,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                FontFamily = fontType
+            };
+            lblNFollowing.GestureRecognizers.Add(toFollowing2);
+
+            lblFollowers = new Label
+            {
+                Text = "Followers",
+                FontSize = 15,
+                TextColor = Color.Silver,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                FontFamily = fontType
+            };
+            lblFollowers.GestureRecognizers.Add(toFollower);
+
+            lblNFollowers = new Label
+            {
+                FontSize = 15,
+                TextColor = Color.Silver,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                FontFamily = fontType
+            };
+            lblNFollowers.GestureRecognizers.Add(toFollower2);
+            #endregion
+
+
+            // DEMO DATA
+            actUser.picture_link = "http://graph.facebook.com/593257725/picture?type=normal&height=130&width=130";
+            actUser.firstname = "Pablo"; actUser.lastname = "Quemé";
+            actUser.username = "avatarbobo";
+            actUser.levelNumber = 5;
+            actUser.location = "Guatemala";
+            actUser.score = 12000;
+            actUser.Level = new Level();
+            lblNFollowing.Text = getFollowing().ToString();
+            lblNFollowers.Text = getFollowers().ToString();
+
+            var gridFollows = new Grid();
+            gridFollows.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            gridFollows.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            gridFollows.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            gridFollows.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            gridFollows.Children.Add(lblFollowers, 0, 0);
+            gridFollows.Children.Add(lblFollowing, 1, 0);
+            gridFollows.Children.Add(lblNFollowers, 0, 1);
+            gridFollows.Children.Add(lblNFollowing, 1, 1);
+
+            var gridPoints = new Grid();
+            gridPoints.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            gridPoints.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            gridPoints.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            gridPoints.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(3, GridUnitType.Star) });
+            gridPoints.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            gridPoints.Children.Add(new Label { BackgroundColor = Color.FromHex("#FF9800"), Text = actUser.score.ToString() + "/15000", FontSize = 15, TextColor = Color.FromHex("#212121"), HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center }, 1, 0);
+            gridPoints.Children.Add(new Label { Text = actUser.levelNumber.ToString(), FontSize = 20, TextColor = Color.Black, FontAttributes = FontAttributes.Bold, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center }, 0, 0);
+            gridPoints.Children.Add(new Label { Text = (actUser.levelNumber + 1).ToString(), FontSize = 20, TextColor = Color.Black, FontAttributes = FontAttributes.Bold, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center }, 2, 0);
+
+            var profileStack = new StackLayout
+            {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                BackgroundColor = Color.FromHex("#00796B"),
+                Children = {
+                    new Image
+                    {
+                        Source = actUser.picture_link
+                    },
+                    new Label
+                    {
+                        HorizontalTextAlignment = TextAlignment.Center,
+                        Text = actUser.firstname + " " + actUser.lastname,
+                        FontAttributes = FontAttributes.Bold,
+
+                        TextColor = Color.FromHex("#FFFFFF"),
+                        FontSize = 25
+                    },
+                    new Label
+                    {
+                        HorizontalTextAlignment = TextAlignment.Center,
+                        Text = "@" + actUser.username,
+                        TextColor = Color.FromHex("#FFFFFF"),
+                        FontSize = 18
+                    },
+                    gridFollows,
+                    gridPoints
+                }
+            };
+
+            var profileScrollView = new ScrollView
+            {
+                Content = profileStack
+            };
+
+
             Content = new StackLayout
             {
-                VerticalOptions = LayoutOptions.Center,
+                BackgroundColor = Color.FromHex("#FFFFFF"),
+
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
                 Children = {
-                       loading, id
-                        }
+                        profileScrollView
+                    }
             };
         }
 
-        //async void lblFollowingClicked()
-        //{
-        //    var page = new Following_Follower.ViewFollowing();
-        //    await Navigation.PushAsync(page);
-        //}
+        #region Components Methods
+        async void lblFollowingClicked()
+        {
+            var page = new Following_Follower.ViewFollowing();
+            await Navigation.PushAsync(page);
+        }
 
-        //async void lblFollowersClicked()
-        //{
-        //    var page = new Following_Follower.ViewFollowers();
-        //    await Navigation.PushAsync(page);
-        //}
+        async void lblFollowersClicked()
+        {
+            var page = new Following_Follower.ViewFollowers();
+            await Navigation.PushAsync(page);
+        }
+        #endregion
     }
 }

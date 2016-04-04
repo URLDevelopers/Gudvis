@@ -14,7 +14,7 @@ namespace F_Gudvis.Log_In
         private Entry txtUsername;
         private Button btnCreate;
         private User actUser;
-        //private UserConnection uc = new UserConnection();
+        private UserConnection uc = new UserConnection();
 
         public void getUser(User theUser)
         {
@@ -97,7 +97,7 @@ namespace F_Gudvis.Log_In
         private bool doesThisUsernameExists(string newUsername)
         {
             bool exists = false;
-
+            exists = !(uc.getUserByUsername(newUsername) == null); //If null is returned, it means that username does not exists
             return exists;
         }
 
@@ -105,11 +105,12 @@ namespace F_Gudvis.Log_In
         /// This method is used to save new user basic info.
         /// </summary>
         /// <param name="userName">
-        /// 
+        ///     user's username
         /// </param>
         private void saveUser(string userName)
         {
-
+            actUser.username = userName;
+            //uc.insertNewUser(actUser);
         }
 
         /// <summary>
@@ -154,19 +155,24 @@ namespace F_Gudvis.Log_In
                 string newUsername = this.txtUsername.Text;
                 if (isThisUsernameCorrect(newUsername)) //Validates username spelling
                 {
-                    var answer = await DisplayAlert("Attention", "Do you want '" + newUsername + "' as your username?", "Yes", "No");
-                    if (answer == false) //"No" was selected
+                    if (doesThisUsernameExists(newUsername) == false)
                     {
-                        txtUsername.Text = "repetir";
-                    }
-                    else
-                    {
-                        saveUser(txtUsername.Text);
-                        await DisplayAlert("Congratulations", "You're part of Gudvis now!", "Awesome");
-                        var page = new F_Gudvis.Profile.Profile();
-                        Navigation.InsertPageBefore(page, this);
-                        await Navigation.PopAsync().ConfigureAwait(false);
-                    }
+                        var answer = await DisplayAlert("Attention", "Do you want '" + newUsername + "' as your username?", "Yes", "No");
+                        if (answer == false) //"No" was selected
+                        {
+                            txtUsername.Text = "";
+                        }
+                        else
+                        {
+                            saveUser(txtUsername.Text);
+                            await DisplayAlert("Congratulations", "You're part of Gudvis now!", "Awesome");
+                            var page = new Navigation_Drawer.RootPage();
+                            page.getUser(actUser);
+                            App.Current.MainPage = page;
+
+                        }
+                    } else
+                        await DisplayAlert("Attention", "Sorry, this username has been taken", "Try again");
                 }
             }
         }

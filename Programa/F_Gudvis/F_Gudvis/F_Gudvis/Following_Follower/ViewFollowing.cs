@@ -8,8 +8,9 @@ using Xamarin.Forms;
 
 namespace F_Gudvis.Following_Follower
 {
-    class ViewFollowing : ContentPage
+    public class ViewFollowing : ContentPage
     {
+        
         public ViewFollowing()
         {
             //var cards = new CardData();

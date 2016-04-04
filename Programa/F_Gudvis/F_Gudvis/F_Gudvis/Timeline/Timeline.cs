@@ -9,6 +9,12 @@ namespace F_Gudvis.Timeline
 {
     class Timeline : ContentPage
     {
+        private User actUser;
+
+        public void getUser(User newUser)
+        {
+            actUser = newUser;
+        }
         public Timeline()
         {
 

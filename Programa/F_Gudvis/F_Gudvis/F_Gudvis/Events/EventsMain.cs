@@ -18,7 +18,12 @@ namespace F_Gudvis.Events
                     WinPhone: "Comic Sans Ms"
                 );
 
-        
+        private User actUser;
+
+        public void getUser(User newUser)
+        {
+            actUser = newUser;
+        }
 
         public EventsMain()
         {

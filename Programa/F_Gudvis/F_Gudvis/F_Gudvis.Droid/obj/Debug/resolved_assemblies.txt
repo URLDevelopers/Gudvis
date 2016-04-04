@@ -67,9 +67,10 @@ C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Xml.ReaderWriter.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Net.Http.dll
+C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\Newtonsoft.Json.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.ServiceModel.Internals.dll
-C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Net.Http.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.ComponentModel.DataAnnotations.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.ComponentModel.Composition.dll
 C:\Users\jcdur\Documents\Gudvis\Gudvis\Programa\F_Gudvis\F_Gudvis\F_Gudvis.Droid\obj\Debug\assemblies\System.Numerics.dll
