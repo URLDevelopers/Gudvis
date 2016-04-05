@@ -10,6 +10,7 @@ namespace F_Gudvis.Profile
     public class Profile : ContentPage
     {
         Label lblFollowing, lblNFollowing, lblFollowers, lblNFollowers;
+        ListView ListTimeLine;
         string fontType = Device.OnPlatform(
                     iOS: "MarkerFelt-thin",
                     Android: "sans-serif-light",
@@ -198,7 +199,46 @@ namespace F_Gudvis.Profile
             {
                 Content = profileStack
             };
+            #region TimeLinePerEvents
+            //Esta lista solamente es como una demo
+            List<Event> Asistidos = new List<Event>() {
+                new Event() {name = "Plantemos", startDateTime =  DateTime.Today.Date, endDateTime = DateTime.Today.Date},
+            };
+            //Esta lista solamente es como una demo
+            List<Event> Asistira = new List<Event>() {
+                new Event() {name = "Plantemos", startDateTime =  DateTime.Today.Date, endDateTime = DateTime.Today.Date},
+            };
 
+            List<EventUsing> Assis = GetInfoTimeLine(Asistidos).ToList();
+            List<EventUsing> Attend = GetInfoTimeLine(Asistira).ToList();
+            EventContent Assisted = new EventContent("Assisted");
+            foreach (EventUsing data in Assis)
+            {
+                Assisted.Add(data);
+            }
+            EventContent Attended = new EventContent("Attended");
+            foreach (EventUsing data in Attend)
+            {
+                Attended.Add(data);
+            }
+
+            List<EventContent> EventDesc = new List<EventContent>();
+            EventDesc.Add(Assisted);
+            EventDesc.Add(Attended);
+
+            var dataTemplate = new DataTemplate(typeof(CustomCell));
+
+            ListTimeLine = new ListView()
+            {
+                IsGroupingEnabled = true,
+                GroupDisplayBinding = new Binding("Name"),
+                GroupShortNameBinding = new Binding("Name"),
+                ItemsSource = EventDesc,
+                ItemTemplate = dataTemplate,
+                GroupHeaderTemplate = new DataTemplate(typeof(EventTemplate)),
+                HasUnevenRows = true
+            };
+            #endregion
 
             Content = new StackLayout
             {
@@ -207,9 +247,11 @@ namespace F_Gudvis.Profile
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 Children = {
-                        profileScrollView
+                        profileScrollView,
+                        ListTimeLine
                     }
             };
+            ListTimeLine.ItemSelected += OnItemSelected;
         }
 
         #region Components Methods
@@ -223,6 +265,122 @@ namespace F_Gudvis.Profile
         {
             var page = new Following_Follower.ViewFollowers();
             await Navigation.PushAsync(page);
+        }
+        #endregion
+
+        #region Class Profile TimeLine
+        class EventTemplate : ViewCell
+        {
+            public EventTemplate()
+            {
+                var text = new Label();
+                text.SetBinding(Label.TextProperty, "Name");
+                text.HorizontalTextAlignment = TextAlignment.Center;
+                text.TextColor = Color.Aqua;
+
+                var view = new StackLayout()
+                {
+                    Orientation = StackOrientation.Horizontal,
+                    Children = {
+                        text
+                    }
+                };
+
+                View = view;
+            }
+        }
+
+        class EventContent : System.Collections.ObjectModel.ObservableCollection<EventUsing>
+        {
+            public EventContent(string name)
+            {
+                Name = name;
+            }
+
+            public string Name { get; set; }
+        }
+        async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
+            // Deselect row
+            ListTimeLine.SelectedItem = null;
+
+            var page = new Events.ViewEvent();
+            await Navigation.PushAsync(page);
+        }
+
+        class CustomCell : ViewCell
+        {
+            public CustomCell()
+            {
+                var nameEvent = new Label();
+                nameEvent.SetBinding(Label.TextProperty, "name");
+                nameEvent.TextColor = Color.Blue;
+
+                var startDate = new Label()
+                {
+                    Text = "Start:",
+                    FontAttributes = FontAttributes.Bold
+                };
+
+                var start = new Label();
+                start.SetBinding(Label.TextProperty, "startDateTime");
+
+                var endDate = new Label()
+                {
+                    Text = "End:",
+                    FontAttributes = FontAttributes.Bold
+                };
+
+                var end = new Label();
+                end.SetBinding(Label.TextProperty, "endDateTime");
+
+                var view = new StackLayout()
+                {
+                    Orientation = StackOrientation.Vertical,
+                    Spacing = 0,
+                    Padding = 10,
+                    Children =
+                    {
+                        nameEvent,
+                        new StackLayout {
+                            Orientation = StackOrientation.Horizontal,
+                                Children =
+                                {
+                                     startDate,
+                                     start,
+                                     endDate,
+                                     end
+                                }
+                        }
+
+                    }
+                };
+                View = view;
+            }
+        }
+
+         List<EventUsing> GetInfoTimeLine(List<Event> ResumeData)
+        {
+            List<EventUsing> data = new List<EventUsing>();
+            EventUsing Ev = new EventUsing();
+            foreach (Event dat in ResumeData)
+            {
+                Ev.name = dat.name;
+                Ev.startDateTime = dat.startDateTime.Date.ToString("dd/MM/yyyy");
+                Ev.endDateTime = dat.endDateTime.Date.ToString("dd/MM/yyyy");
+                data.Add(Ev);
+            }
+            return data;
+        }
+        public class EventUsing
+        {
+            public string name { get; set; }
+            public string startDateTime { get; set; }
+            public string endDateTime { get; set; }
         }
         #endregion
     }
