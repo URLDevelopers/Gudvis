@@ -54,7 +54,9 @@ namespace F_Gudvis.Droid
                     var userData = JsonValue.Parse(response.GetResponseText()); //getting response with data
 
                     //lets save the data from the request in the previously created instance
-                    user.picture_link = userData["picture"].ToString().Replace("\"", "");
+                    string jsonImage = userData["picture"].ToString().Replace("\"", "");
+                    string[] separated = jsonImage.Split(',');
+                    user.picture_link = separated[1].Substring(6).Replace("}}", "");
                     user.fbID = userData["id"].ToString().Replace("\"", "");
                     //user.birthday = userData["birthday"];
                     user.firstname = userData["first_name"].ToString().Replace("\"", "");
@@ -67,14 +69,13 @@ namespace F_Gudvis.Droid
                     if (searchedUser == null)
                     {
                         //It means that user name needs to be created
-                        var page = new Username();
-                        page.getUser(user);
+                        var page = new Username(user);
                         App.Current.MainPage = page;
                     }
                     else
                     {
                         //It means that user name exists
-                        var page = new Navigation_Drawer.RootPage();
+                        var page = new Navigation_Drawer.RootPage(user);
                         App.Current.MainPage = page;
                     }
 

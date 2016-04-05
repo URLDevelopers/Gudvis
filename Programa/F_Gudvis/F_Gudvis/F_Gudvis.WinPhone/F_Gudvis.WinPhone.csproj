@@ -98,13 +98,16 @@
   <ItemGroup>
     <Content Include="Assets\calendar.png" />
     <Content Include="Assets\clock.png" />
+    <Content Include="Assets\email.png" />
     <Content Include="Assets\Events.png" />
     <Content Include="Assets\Followers.png" />
     <Content Include="Assets\Following.png" />
     <Content Include="Assets\Friends.png" />
     <Content Include="Assets\gudvis.jpg" />
     <Content Include="Assets\gudvis2.jpg" />
+    <Content Include="Assets\information.png" />
     <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\map.png" />
     <Content Include="Assets\menu.png" />
     <Content Include="Assets\Profile.png" />
     <Content Include="Assets\Settings.png" />

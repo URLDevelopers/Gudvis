@@ -21,15 +21,6 @@ namespace F_Gudvis.Profile
 
         #region class Methods
         /// <summary>
-        ///     This method needs to be called 
-        /// </summary>
-        /// <param name="theUser"></param>
-        public void getUser(User theUser)
-        {
-            actUser = theUser;
-        }
-
-        /// <summary>
         ///     This function returns the # of followers from actual user
         /// </summary>
         /// <returns>
@@ -66,8 +57,9 @@ namespace F_Gudvis.Profile
         }
         #endregion+
 
-        public Profile()
+        public Profile(User newUser)
         {
+            actUser = newUser;
             //This methods are created for asigning a "onClick" event to each label.
             //with the goal of: everytime a user clicks on his/her followers/following,
             //it will open a new window, showing them.
@@ -139,9 +131,9 @@ namespace F_Gudvis.Profile
 
 
             // DEMO DATA
-            actUser.picture_link = "http://graph.facebook.com/593257725/picture?type=normal&height=130&width=130";
-            actUser.firstname = "Pablo"; actUser.lastname = "Quemé";
-            actUser.username = "avatarbobo";
+            //actUser.picture_link = "http://graph.facebook.com/593257725/picture?type=normal&height=130&width=130";
+            //actUser.firstname = "Pablo"; actUser.lastname = "Quemé";
+            //actUser.username = "avatarbobo";
             actUser.levelNumber = 5;
             actUser.location = "Guatemala";
             actUser.score = 12000;

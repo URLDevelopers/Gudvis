@@ -12,17 +12,16 @@ namespace F_Gudvis.Navigation_Drawer
         MenuPage menuPage;
         private User actUser;
 
-        public void getUser(User newUser)
+        public RootPage(User newUser)
         {
             actUser = newUser;
-        }
-
-        public RootPage()
-        {
             menuPage = new MenuPage();
             menuPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as MenuItem);
             Master = menuPage;
-            Detail = new Timeline.Timeline();
+            Detail = new NavigationPage(new Timeline.Timeline(actUser))
+            {
+                BarBackgroundColor = Color.FromHex("#F44336")
+            };
         }
 
         void NavigateTo(MenuItem menu)
@@ -32,40 +31,52 @@ namespace F_Gudvis.Navigation_Drawer
             
             string[] separated = menu.TargetType.FullName.Split('.'); //Separate full name
             string pageName = separated[separated.Length - 1]; //Gets page name
-            
+
             //This switch is used for sending the actual user to the new page.
-            switch (pageName) 
+            switch (pageName)
             {
-                //case "EventsMain":
-                //    var newEvents = new Events.EventsMain();
-                //    newEvents.getUser(actUser);
-                //    Detail = new NavigationPage(newEvents);
-                //    break;
+                case "EventsMain":
+                    var newEvents = new Events.EventsMain(actUser);
+                    Detail = new NavigationPage(newEvents)
+                    {
+                        BarBackgroundColor = Color.FromHex("#FF5722") //Anaranjado
+                    }; ;
+                    break;
 
-                //case "Profile":
-                //    var newProfile = new Profile.Profile();
-                //     newProfile.getUser(actUser);
-                //    Detail = new NavigationPage(newProfile);
-                //    break;
+                case "Profile":
+                    var newProfile = new Profile.Profile(actUser);
+                    Detail = new NavigationPage(newProfile)
+                    {
+                        BarBackgroundColor = Color.FromHex("#009688") //verde
+                    };
+                    break;
 
-                //case "Settings":
-                //    var newSettings = new Settings.Settings();
-                //    newSettings.getUser(actUser);
-                //    Detail = new NavigationPage(newSettings);
-                //    break;
+                case "Settings":
+                    var newSettings = new Settings.Settings(actUser);
+                    Detail = new NavigationPage(newSettings)
+                    {
+                        BarBackgroundColor = Color.FromHex("#607D8B") //Gris obscuro
+                    };
+                    break;
 
-                //case "Timeline":
-                //    var newTimeline = new Timeline.Timeline();
-                //    newTimeline.getUser(actUser);
-                //    Detail = new NavigationPage(newTimeline);
-                //    break;
+                case "Timeline":
+                    //var newTimeline = new Events.ViewEventsList(actUser);
+                    var newTimeline = new Timeline.Timeline(actUser);
+                    Detail = new NavigationPage(newTimeline)
+                    {
+                        BarBackgroundColor = Color.FromHex("#F44336") //Rojo
+                    };
+
+                    break;
 
                 default:
                     Page displayPage = (Page)Activator.CreateInstance(menu.TargetType);
-                    Detail = new NavigationPage(displayPage);
+                    Detail = new NavigationPage(displayPage)
+                    {
+                        BarBackgroundColor = Color.FromHex("#009688")
+                    };
                     break;
             }
-            
 
             menuPage.Menu.SelectedItem = null;
             IsPresented = false;

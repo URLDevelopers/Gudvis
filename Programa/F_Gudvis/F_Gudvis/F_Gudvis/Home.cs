@@ -25,12 +25,12 @@ namespace F_Gudvis
 
         async void Login_Clicked(object sender, EventArgs e)
         {
-            User newUser = new User();
-            var page = new Navigation_Drawer.RootPage();
-            page.getUser(newUser);
-            App.Current.MainPage = page;
-            //var page = new Log_In.Auth();
+            //User newUser = new User();
+            //var page = new Events.ViewEvent();
+            //page.getUser(newUser);
             //App.Current.MainPage = page;
+            var page = new Log_In.Auth();
+            App.Current.MainPage = page;
         }
 
         public Home()

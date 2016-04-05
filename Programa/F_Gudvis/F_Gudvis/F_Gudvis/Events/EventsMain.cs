@@ -20,13 +20,9 @@ namespace F_Gudvis.Events
 
         private User actUser;
 
-        public void getUser(User newUser)
+        public EventsMain(User newUser)
         {
             actUser = newUser;
-        }
-
-        public EventsMain()
-        {
             btnView = new Button
             {
                 FontFamily = fontType,

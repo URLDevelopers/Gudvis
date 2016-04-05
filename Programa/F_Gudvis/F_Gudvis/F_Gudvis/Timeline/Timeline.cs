@@ -11,13 +11,9 @@ namespace F_Gudvis.Timeline
     {
         private User actUser;
 
-        public void getUser(User newUser)
+        public Timeline(User newUser)
         {
             actUser = newUser;
-        }
-        public Timeline()
-        {
-
             Label id = new Label
             {
                 Text = "Create an unique username",

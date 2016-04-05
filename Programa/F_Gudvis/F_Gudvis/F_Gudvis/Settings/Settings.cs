@@ -11,12 +11,9 @@ namespace F_Gudvis.Settings
     {
         private User actUser;
 
-        public void getUser(User newUser)
+        public Settings(User newUser)
         {
             actUser = newUser;
-        }
-        public Settings()
-        {
 
             Label id = new Label
             {

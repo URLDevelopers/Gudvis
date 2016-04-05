@@ -16,12 +16,9 @@ namespace F_Gudvis.Log_In
         private User actUser;
         private UserConnection uc = new UserConnection();
 
-        public void getUser(User theUser)
+        public Username(User newUser)
         {
-            actUser = theUser;
-        }
-        public Username()
-        {
+            actUser = newUser;
             lblInfo = new Label
             {
                 Text = "Create an unique username",
@@ -166,8 +163,7 @@ namespace F_Gudvis.Log_In
                         {
                             saveUser(txtUsername.Text);
                             await DisplayAlert("Congratulations", "You're part of Gudvis now!", "Awesome");
-                            var page = new Navigation_Drawer.RootPage();
-                            page.getUser(actUser);
+                            var page = new Navigation_Drawer.RootPage(actUser);
                             App.Current.MainPage = page;
 
                         }
