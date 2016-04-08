@@ -308,6 +308,14 @@ namespace F_Gudvis.Profile
             // Deselect row
             ListTimeLine.SelectedItem = null;
 
+            EventUsing InfoSelectItem = new EventUsing();
+            object contenido = ListTimeLine.SelectedItem;
+            InfoSelectItem = (EventUsing)contenido;
+
+            string nameEvent = InfoSelectItem.name;
+            int idSelected = InfoSelectItem.id;
+            await DisplayAlert("ID", InfoSelectItem.id.ToString(), "OK");
+
             var page = new Events.ViewEvent();
             await Navigation.PushAsync(page);
         }
@@ -366,13 +374,17 @@ namespace F_Gudvis.Profile
          List<EventUsing> GetInfoTimeLine(List<Event> ResumeData)
         {
             List<EventUsing> data = new List<EventUsing>();
-            EventUsing Ev = new EventUsing();
+            EventUsing Ev;
+            int i = 0;
             foreach (Event dat in ResumeData)
             {
+                Ev = new EventUsing();
                 Ev.name = dat.name;
-                Ev.startDateTime = dat.startDateTime.Date.ToString("dd/MM/yyyy");
-                Ev.endDateTime = dat.endDateTime.Date.ToString("dd/MM/yyyy");
+                Ev.startDateTime = dat.startDateTime.Date.ToString("MM/dd/yyyy");
+                Ev.endDateTime = dat.endDateTime.Date.ToString("MM/dd/yyyy");
+                Ev.id = i;
                 data.Add(Ev);
+                i++;
             }
             return data;
         }
@@ -381,6 +393,7 @@ namespace F_Gudvis.Profile
             public string name { get; set; }
             public string startDateTime { get; set; }
             public string endDateTime { get; set; }
+            public int id { get; set; }
         }
         #endregion
     }
